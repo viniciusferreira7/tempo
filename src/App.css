@@ -6,12 +6,25 @@
 
 html,body{
   height:100%;
-  background-color: lightskyblue
+  background-image:linear-gradient(lightskyblue 70%, white );
 }
 
 .app{
   width:100%;
   padding:0 2%;
+  text-align: center;
+}
+
+.app h2{
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  color: white;
+  font-family: "Alfa Slab One";
+  font-weight: 400;
+  font-size: 60px;
+ position: relative;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .search{
@@ -22,9 +35,11 @@ html,body{
   transform: translate(-50%,-50%);
 
 }
-
 .search form{
   width:100%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
   max-width: 500px;
   display: flex;
   align-items: center;
@@ -51,11 +66,13 @@ input[type="submit"]{
   text-align: center;
   width:100%;
   max-width:200px;
-  background-color: white;
+  background-color: rgba(252, 249, 249, 0.26);
   padding:10px;
+  border: 1px solid white;
   position: relative;
-  top:10px;
+  top:50px;
   left:50%;
   transform: translateX(-50%);
   border-radius: 10px;
 }
+

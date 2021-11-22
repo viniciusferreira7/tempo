@@ -82,6 +82,7 @@ function Search(props){
     
     return(
         <div className="search">
+                  <h2>weather</h2>
             <form onSubmit={(e) => searchInput(e)}>
                 <input type="text" placeholder={props.placeholder}/>
                 <input type="submit" value="Search"/>
